@@ -3,76 +3,59 @@
   <meta charset="UTF-8" />
   <title>Act2_Dis</title>
   <head>
-    <style>
-      * {
-        box-sizing: border-box;
-      }
-
-      .column {
-        float: left;
-        width: 33.33%;
-        padding: 5px;
-      }
-
-      /* Clearfix (clear floats) */
-      .row::after {
-        content: "";
-        clear: both;
-        display: table;
-      }
-    </style>
+    <link rel="stylesheet" href="styles.css">
   </head>
 
   <body>
     <div class="row">
-      <h2>Imágenes en diferentes formatos</h2>
+      <h2 class="titles">Imágenes en diferentes formatos</h2>
 
       <div class="column">
-        <h3>GIF</h3>
-        <img src="imgs/naranjos.gif" alt="GIF" style="width: 100%" />
+        <h3 class="titles">GIF</h3>
+        <div id="container"><img src="imgs/naranjos.gif" alt="GIF" style="width: 100%" /></div>
       </div>
 
       <div class="column">
-        <h3>PNG</h3>
+        <h3 class="titles">PNG</h3>
         <img src="imgs/naranjos.png" alt="PNG" style="width: 100%" />
       </div>
 
       <div class="column">
-        <h3>JPG 100</h3>
+        <h3 class="titles">JPG 100</h3>
         <img src="imgs/naranjos100.jpg" alt="100" style="width: 100%" />
       </div>
 
       <div class="column">
-        <h3>JPG 50</h3>
+        <h3 class="titles">JPG 50</h3>
         <img src="imgs/naranjos50.jpg" alt="50" style="width: 100%" />
       </div>
 
       <div class="column">
-        <h3>JPG 25</h3>
+        <h3 class="titles">JPG 25</h3>
         <img src="imgs/naranjos25.jpg" alt="25" style="width: 100%" />
       </div>
     </div>
 
     <div class="row">
-        <h2>Audios en diferentes formatos</h2>
+        <h2 class="titles">Audios en diferentes formatos</h2>
 
         <div class="column">
-            <h3>OGG</h3>
-        <audio controls>
+            <h3 class="titles">OGG</h3>
+        <audio controls class="audios">
             <source src="audio/Thomas_ogg_15.ogg" type="audio/ogg">
         </audio>
         </div>
 
         <div class="column">
-            <h3>MP3</h3>
-            <audio controls>
+            <h3 class="titles">MP3</h3>
+            <audio controls class="audios">
                 <source src="audio/Thomas_mp3_15.mp3" type="audio/mp3">
             </audio>
             </div>
 
         <div class="column">
-            <h3>WAV</h3>
-            <audio controls>
+            <h3 class="titles">WAV</h3>
+            <audio controls class="audios">
                  <source src="audio/Thomas_wav_15.wav" type="audio/wav">
              </audio>
             </div>
