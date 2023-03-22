@@ -25,18 +25,48 @@
     margin-right: auto;
     width: 50%;
 }
+.center-audios{
+    margin: auto;
+    width: 50%;
+    padding: 10px;
+}
 
 img {
     height: 100%;
     width: 100%;
 }
 
-.reduce-move {
+#reduce-move {
     width: 100%;
     transition: width 3s, transform 3s;
   }
   
-.reduce-move:hover {
+#reduce-move:hover {
     width: 50%;
     transform: translateX(20px);
   }
+
+  #rotate-by-degrees {
+    transition: transform 0.5s;
+  }
+  
+  #rotate-by-degrees:hover {
+    animation-name: girar;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+  }
+  
+  @keyframes girar {
+    25% {
+      transform: scale(0.25) rotate(45deg);
+    }
+    50% {
+      transform: scale(0.5) rotate(90deg);
+    }
+    75% {
+      transform: scale(0.75) rotate(-45deg);
+    }
+    100% {
+      transform: scale(1) rotate(-90deg);
+    }
+  } 
